@@ -1,0 +1,14 @@
+<%- include('header/header.ejs') %>
+<form method="post" action="/update/<%= id %>">
+    <label>FirstName</label>
+    <input type="text" name="FirstName" value="<%= contacts.FirstName%>">
+    <br>
+    <label>LastName</label>
+    <input type="text" name="LastName" value="<%= contacts.LastName%>">
+    <br>
+    <label>PhoneNumber</label>
+    <input type="text" name="PhoneNumber" value="<%= contacts.PhoneNumber%>">
+    <br>
+    <input type="submit">
+</form>
+<%- include('footer/footer.ejs') %>
